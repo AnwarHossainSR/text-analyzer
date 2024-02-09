@@ -17,7 +17,7 @@ Make sure you have the following software installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/text-analyzer-web-app.git
+   git clone git@github.com:AnwarHossainSR/text-analyzer.git
 
    ```
 
