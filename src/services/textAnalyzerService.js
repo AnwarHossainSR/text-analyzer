@@ -1,4 +1,4 @@
-import fs from "fs";
+const fs = require("fs");
 
 const analyzeText = (metric) => {
   const text = fs.readFileSync("./data/sample.txt", "utf-8");
@@ -26,4 +26,4 @@ const analyzeText = (metric) => {
   }
 };
 
-export { analyzeText };
+module.exports = { analyzeText };
