@@ -16,13 +16,19 @@ const getSentenceCount = (req, res) => {
 };
 
 const getParagraphCount = (req, res) => {
-  const paragraphCount = analyzeText('paragraphs');
+  const paragraphCount = analyzeText("paragraphs");
   res.json({ paragraphCount });
+};
+
+const getLongestWords = (req, res) => {
+  const longestWords = analyzeText("longestWords");
+  res.json({ longestWords });
 };
 
 module.exports = {
   getWordCount,
   getCharacterCount,
   getSentenceCount,
-  getParagraphCount
+  getParagraphCount,
+  getLongestWords,
 };
