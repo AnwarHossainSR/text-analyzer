@@ -15,8 +15,14 @@ const getSentenceCount = (req, res) => {
   res.json({ sentenceCount });
 };
 
+const getParagraphCount = (req, res) => {
+  const paragraphCount = analyzeText('paragraphs');
+  res.json({ paragraphCount });
+};
+
 module.exports = {
   getWordCount,
   getCharacterCount,
   getSentenceCount,
+  getParagraphCount
 };
