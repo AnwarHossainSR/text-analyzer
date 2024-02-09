@@ -6,10 +6,17 @@ const getWordCount = (req, res) => {
 };
 
 const getCharacterCount = (req, res) => {
-  const characterCount = analyzeText('characters');
+  const characterCount = analyzeText("characters");
   res.json({ characterCount });
 };
 
+const getSentenceCount = (req, res) => {
+  const sentenceCount = analyzeText("sentences");
+  res.json({ sentenceCount });
+};
+
 module.exports = {
-  getWordCount,getCharacterCount
+  getWordCount,
+  getCharacterCount,
+  getSentenceCount,
 };
